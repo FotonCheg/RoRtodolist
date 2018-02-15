@@ -1,0 +1,158 @@
+body{
+  min-height:920px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #82c9ff, rgb(255, 143, 0));
+
+}
+
+.project-header{
+  background: linear-gradient(to bottom, #5489c9, #365998);
+  color: white;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#projects-container{
+  margin: auto;
+  float:none !important;
+}
+
+/*Middle*/
+.project-middle{
+  background: linear-gradient(to bottom, #e0e0e0, #cfcfcf);
+  color: white;
+  padding: 5px 20px;
+  font-size: 2em;
+}
+
+.glyphicon {
+  color:yellow;
+}
+
+.glyphicon-plus{
+  color:green;
+  line-height: normal;
+  padding:0;
+}
+.form-control[type="text"]{
+  width:100% !important;
+}
+.project-middle input[value="Add task"] {
+  background: linear-gradient(to bottom, #a2e1c2, #5d8d72);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius:0;
+  border: none;
+  outline:none !important;
+  user-select:none;
+}
+
+@media screen and (max-width: 768px) {
+  .project-middle input[value="Add task"] {
+    display:block !important;
+    border-radius:10px !important;
+    margin: 10px auto;
+    width:50%;
+  }
+
+  .project-middle{
+    padding:0;
+  }
+
+  .task-options-group{
+    display:block !important;
+    float: none !important;
+    text-align: right;
+    padding-top: 10px;
+  }
+
+  .checking-status{
+    display: inline;
+  }
+
+  .task-name{
+    display: block;
+    margin-top: 5px;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+
+  .datepicker{
+    float: none !important;
+  }
+
+  input[type="checkbox"]{
+    float:left;
+  }
+}
+
+.input-task-name-wrapper{
+  padding:0 !important;
+}
+
+.input-task-name-wrapper input{
+  border-bottom-right-radius: 0;
+  border-top-right-radius:0;
+}
+/*Footer*/
+.project-tasks-container{
+  border-radius: 0 0 10px 10px;
+  background:white;
+  padding: 2px 5px !important;
+}
+
+.tasks{
+  user-select: none;
+  line-height: 15px;
+  list-style-type: none;
+  padding: 10px;
+  display: block;
+  border-top: 1px solid #ccc;
+  background: linear-gradient(to bottom, #4e80c0, #324f82);
+  color: white;
+  margin: 10px 5px;
+  border-radius: 10px;
+}
+
+#add-project-button{
+  color: white;
+  background: linear-gradient(to bottom, #5489c9, #365998);
+  border: none;
+  padding: 8px;
+  outline: none;
+  width: 200px;
+  border-radius: 7px;
+  display:block;
+  margin:auto;
+}
+
+#ruby-garage-cr{
+  display:block;
+  margin:auto;
+  padding:10px;
+}
+
+.tasks .glyphicon{
+  padding: 0 3px;
+}
+
+.datepicker {
+  width:100px;
+  color:black;
+  text-align: center;
+  float: left;
+}
+
+.task-options-group{
+display:none;
+  float:right;
+}
+
+.tasks:hover .task-options-group{
+  display:block;
+}

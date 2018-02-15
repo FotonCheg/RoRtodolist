@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%=csrf_meta_tags%>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <title>My ToDo list</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--For including application.js script, which includes all scripts in the javascripts directory-->
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
+
+
+
+  </head>
+  <body>
+  <header  class="text-center">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <h1>SIMPLE TODO LISTS</h1>
+    <h4>FROM RUBY GARAGE BY DYACHENKO YAROSLAV</h4>
+  </header>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div id="projects-container" class="col-sm-7 pull-center">
+
+      <%= yield %>
+
+      </div>
+
+    </div>
+  </div>
+  <footer class=".container-fluid">
+    <div class="row" id="add-project-button-area">
+
+    </div>
+    <div class="row">
+      <span class="pull-center text-center" id="ruby-garage-cr">©Ruby Garage 2018</span>
+    </div>
+  </footer>
+  </body>
+</html>
