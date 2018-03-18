@@ -2,7 +2,7 @@
 Ruby, Ruby On Rails Framework, RSpec for testing, Factory Girl for mocking, Devise for authentication, SQLite3 for development and PostgreSql for production, javascript, jQuery, AJAX etc.
 
 ## Project on herokuapp.com:
-[rordyachenkoytodolist.herokuapp.com](https://http://rordyachenkoytodolist.herokuapp.com/)
+[rordyachenkoytodolist.herokuapp.com](https://rordyachenkoytodolist.herokuapp.com/)
 
 ## Sql queries:
 /*-----------------------1*/
